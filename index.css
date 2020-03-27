@@ -1,0 +1,264 @@
+/* General*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 15px;
+}
+
+.wrapper{ /*div utilisé à plusieurs endroit pour centrer les info sur le site*/
+	width: 1400px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.orange {
+	color: #ff7a00;
+}
+
+h1 {
+	font-size: 45px;
+	color: #444;	
+}
+
+h2{
+	color: #444;
+	font-size: 55px;
+}
+
+ul{
+	list-style: none /* supprime les point aux listes*/
+}
+
+a{
+	text-decoration: none /* supprime le sourlignage aux liens/*/
+}
+
+/* HEADER  */
+
+header {
+	height: 120px;
+}
+
+.logoHeader{
+	float: left;
+	margin-top: 5px;
+}
+
+.logo{
+	height: 110px;
+	width: 110px;
+}
+
+header h1 {
+	float: left;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+header nav {
+	float: right;
+	margin-top: 50px;
+}
+
+header nav ul li{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+header nav ul li a {
+	font-weight: bold;
+	color: black;
+	font-size:19px;
+}
+
+/*firstSection*/
+
+#firstSection{
+	height: 580px;
+	background: url('img/mainImage.jpg') center;
+	background-size: 100%; 
+}
+
+#firstSection img{
+	width: auto;
+    height: auto;
+}
+
+#firstSection h2{
+	color: white;
+	text-align: center; /*centrer le texte dans le container*/
+	margin-bottom: 40px;
+}
+
+#gridFirstSection{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap:20px;
+	grid-row-gap:20px;
+	grid-auto-flow: column;
+}
+
+#gridFirstSection p {
+	color: white;
+	font-size: 20px;
+}
+
+/*consultation*/
+
+#consultation h2{
+	text-align: center;
+	margin: 10px auto;
+}
+
+.btnInfo{
+	display: block; /* pour que le width et height soit pris en compte caption-side: r par défault le <a est inline*/
+	width: 120px;
+	height: 50px;
+	background: #ff7a00;
+	color: white;
+	font-size: 20px;
+	margin:0 auto;
+	text-align: center;
+	line-height: 48px;
+	border-radius: 3px;
+	margin-top: 20px;
+
+}
+
+/*Article*/
+
+#article{
+	background-color: #efefef;
+	margin-top: 30px;
+	padding: 10px 0;
+}
+
+#article h2{
+	text-align: center;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr;
+	grid-template-rows: 270px 270px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+}
+
+.grid article{
+	border-radius: 10px; 
+}
+
+.overlay{
+	background: rgba(255,255,255,0.85);
+	height: 250px;
+	width: 45%;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px 0 0 10px;
+	text-align: center;
+}
+
+article h3{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+article p{
+	text-align: justify;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.btnArticle{
+	color: white;
+	background-color: #ff7a00;
+	padding: 6px 20px;
+	border-radius: 3px;
+}
+
+.btnArticle:hover{
+	background-color: #02b8dd;
+}
+
+/*About*/
+
+#aboutMe{
+	overflow: hidden;
+	text-align: center;
+	background: #34495e;
+	padding: 60px;
+}
+
+.ps h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: white;
+	font-size: 40px;
+}
+
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	background: #3498db;
+	margin-bottom: 40px;
+}
+
+.ps{
+	margin-bottom: 40px;
+}
+
+.ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width: 300px;
+	height:300px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.ps a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+.ps a:hover > img{
+	filter: none;
+}
+
+#p1{
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: white;
+	text-align:justify;
+	height: 0;
+	overflow: hidden;
+}
+
+#p1:target{
+	height: auto;
+}
+
+#p1 h1{
+	color: white;
+	font-size: 16px;
+}
+
+.name{
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+}
