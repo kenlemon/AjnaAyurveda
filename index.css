@@ -319,7 +319,7 @@ footer nav ul li:after {
 footer nav ul li a {
   color: white;
   margin: auto;
-  text-shadow: 0 0px 0 rgb(2,2,2);
+  text-shadow: 0 2px 0 white;
   transform: rotate(-45deg);
   transition: all .8s ease-in;
 }
