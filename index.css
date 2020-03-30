@@ -259,6 +259,51 @@ header nav ul li a {
   font-size: 0.9em;
 }
 
+/*consultation -> pulse button */
+
+.pulse-button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 1.3em;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: #ff6d4a; 
+  cursor: pointer;
+  transform: scale(1);
+
+  animation: animate 3s linear infinite;
+  
+}
+.pulse-button:hover {
+  animation: none;
+}
+
+@keyframes animate {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255,109,74,.7), 0 0 0 0 rgba(255,109,74,.7);
+	}
+
+	40% {
+		box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 0 rgba(255,109,74,.7);
+	}
+
+	80% {
+		box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 30px rgba(255,109,74,0);
+	}
+
+}
 
 
 
